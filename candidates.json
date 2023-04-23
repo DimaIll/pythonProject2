@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Alex",
+    "picture": "https://photos_candidates/30",
+    "position": "Delphi developer",
+    "gender" : "male",
+    "age" : 23,
+    "skills" : "Delphi"
+  },
+  {
+    "id": 2,
+    "name": "Vasily",
+    "picture": "https://photos_candidates/30",
+    "position": "python developer",
+    "gender" : "male",
+    "age" : 36,
+    "skills" : "python"
+  },
+  {
+    "id": 3,
+    "correct": "Helga",
+    "picture": "https://photos_candidates/30",
+    "position": "go developer",
+    "gender" : "female",
+    "age" : 30,
+    "skills" : "go"
+  }
+]
