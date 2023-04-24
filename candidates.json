@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "correct": "Helga",
+    "name": "Helga",
     "picture": "https://photos_candidates/30",
     "position": "go developer",
     "gender" : "female",
