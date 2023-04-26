@@ -19,4 +19,14 @@ def profile(id):
     str_candidates += f"{candidate['picture']}\n\n{candidate['position']}\n{candidate['skills']}\n"
     return candidate
 
+@app.route("/skills/<skill>")
+def skills(skill):
+    str_candidate = "<pre>"
+    for candidate in candidates.values():
+        candidate_skills = candidates["skills"].split(", ")
+        if skill in candidate_skills:
+            str_candidate += f"{candidate['name']}\n\n{candidate['position']}\n{candidate['skills']}\n\n"
+    str_candidate += "<pre>"
+    return str_candidate
+
 app.run()

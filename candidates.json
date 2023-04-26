@@ -6,7 +6,7 @@
     "position": "Delphi developer",
     "gender" : "male",
     "age" : 23,
-    "skills" : "Delphi"
+    "skills" : "Delphi, go"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "position": "python developer",
     "gender" : "male",
     "age" : 36,
-    "skills" : "python"
+    "skills" : "python, Delphi"
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "position": "go developer",
     "gender" : "female",
     "age" : 30,
-    "skills" : "go"
+    "skills" : "go, python"
   }
 ]
