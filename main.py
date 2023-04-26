@@ -1,27 +1,22 @@
 from flask import Flask
 import utils
+
 app = Flask(__name__)
+
+candidates = utils.load_candidates()
 
 @app.route("/")
 def page_index():
-    return "Я главная страничка"
+    str_candidates = "<pre>"
+    for candidate in candidates.values():
+        str_candidates += f"{candidate['name']}\n{candidate['position']}\n{candidate['skills']}\n\n"
+    str_candidates += "<pre>"
+    return str_candidates
 
-@app.route("/profile/")
-def page_profile():
-    return "Имя пользователя"
-
-@app.route("/feed/")
-def page_feed():
-    return "Лента пользователя"
-
-@app.route("/message/")
-def page_message():
-    return "Сообщения пользователя"
-
-@app.route("/users/<int:uid>")
-def profile(uid):
-    print(uid)
-    print(type(uid))
-    return ""
+@app.route("/candidates/<int:id>")
+def profile(id):
+    candidate = candidates[id]
+    str_candidates += f"{candidate['picture']}\n\n{candidate['position']}\n{candidate['skills']}\n"
+    return candidate
 
 app.run()
